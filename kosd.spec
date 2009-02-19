@@ -1,17 +1,19 @@
 %define oname KOSD
 
-Name: kde3-kosd
-Version: 0.2.3
+Name: kosd
+Version: 0.4
 Release: %mkrel 1
 Summary: An application showing OSD to respond volume buttons
 License: GPLv2+
 Group: Graphical desktop/KDE
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 URL: http://www.kde-apps.org/content/show.php?content=81457
-Source: http://www.kde-apps.org/CONTENT/content-files/81457-%{oname}-%{version}.tar.bz2
-BuildRequires: kdelibs-devel
-Requires: kde3-kmix
+Source: http://www.kde-apps.org/CONTENT/content-files/81457-%{name}-%{version}.tar.gz
+Patch0: kosd-0.4-fix-build.patch
+BuildRequires: kdebase4-workspace-devel
+Requires: kmix
 Obsoletes: kde3-kvolumeosd < %version
+Obsoletes: kde3-kosd < %version
 
 %description
 KOSD is a simple KDE application that runs in the background and
@@ -19,21 +21,18 @@ responds to volume buttons by showing a little OSD. It delegates the
 actual job of adjusting the volume to KMix.
 
 %prep
-%setup -q -n %{oname}
+%setup -q -n %{name}-%{version}
+%patch0 -p0
 
 %build
-make -f Makefile.cvs
-%configure_kde3
+%cmake_kde4
 %make
 
 %install
 rm -rf %buildroot
-%makeinstall_std
+%makeinstall_std -C build
 
 %find_lang kosd --with-html
-
-mkdir -p %buildroot%_kde3_datadir/applications/kde
-mv %buildroot/share/applications/*.desktop %buildroot%_kde3_datadir/applications/kde
 
 %clean
 rm -rf %buildroot
@@ -52,7 +51,4 @@ rm -rf %buildroot
 
 %files -f kosd.lang
 %defattr(-,root,root)
-%{_kde3_bindir}/kosd
-%{_kde3_appsdir}/kosd
-%{_kde3_datadir}/applications/kde/*.desktop
-%{_kde3_iconsdir}/hicolor/*/apps/*
+%{_kde_bindir}/*
