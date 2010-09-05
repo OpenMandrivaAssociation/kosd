@@ -1,5 +1,5 @@
 Name: kosd
-Version: 0.5.1
+Version: 0.6.0
 Release: %mkrel 1
 Summary: An application showing OSD to respond volume buttons
 License: GPLv2+
