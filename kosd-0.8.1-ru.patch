@@ -1,0 +1,228 @@
+diff -urN kosd-0.8.1/po/ru.po kosd-0.8.1-patched/po/ru.po
+--- kosd-0.8.1/po/ru.po	1970-01-01 10:00:00.000000000 +1000
++++ kosd-0.8.1-patched/po/ru.po	2011-12-10 21:56:20.000000000 +1100
+@@ -0,0 +1,224 @@
++# SOME DESCRIPTIVE TITLE.
++# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
++# This file is distributed under the same license as the PACKAGE package.
++# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
++#
++msgid ""
++msgstr ""
++"Project-Id-Version: PACKAGE VERSION\n"
++"Report-Msgid-Bugs-To: mahasler@gmail.com\n"
++"POT-Creation-Date: 2011-11-13 14:45+0100\n"
++"PO-Revision-Date: 2011-12-10 14:56+0300\n"
++"Last-Translator: Рыжих Виктор <victorr2007@yandex.ru>\n"
++"Language-Team: \n"
++"Language: \n"
++"MIME-Version: 1.0\n"
++"Content-Type: text/plain; charset=UTF-8\n"
++"Content-Transfer-Encoding: 8bit\n"
++"X-Poedit-Language: Russian\n"
++"X-Poedit-Country: RUSSIAN FEDERATION\n"
++"X-Poedit-SourceCharset: utf-8\n"
++
++#: kded_kosd_keys/kosdkeysd.cpp:43
++msgid "KOSD"
++msgstr "KOSD"
++
++#: kded_kosd_keys/kosdkeysd.cpp:44
++msgid "(C) 2008-2011 Marcel Hasler"
++msgstr "(C) 2008-2011 Marcel Hasler"
++
++#: kded_kosd_keys/kosdkeysd.cpp:45
++msgid "Marcel Hasler"
++msgstr "Marcel Hasler"
++
++#: kded_kosd_keys/kosdkeysd.cpp:45
++msgid "Author and Maintainer"
++msgstr "Автор и Сопровождающий"
++
++#: kded_kosd_keys/kosdkeysd.cpp:55
++msgid "Increase Volume"
++msgstr "Увеличение громкости"
++
++#: kded_kosd_keys/kosdkeysd.cpp:61
++msgid "Decrease Volume"
++msgstr "Уменьшение громкости"
++
++#: kded_kosd_keys/kosdkeysd.cpp:67
++msgid "Mute Volume"
++msgstr "Выключить звук"
++
++#: kded_kosd_keys/kosdkeysd.cpp:73
++msgid "Show Volume"
++msgstr "Показать громкость"
++
++#: kded_kosd_keys/kosdkeysd.cpp:79
++msgid "Increase Brightness"
++msgstr "Увеличение яркости"
++
++#: kded_kosd_keys/kosdkeysd.cpp:85
++msgid "Decrease Brightness"
++msgstr "Уменьшение яркости"
++
++#: kded_kosd_keys/kosdkeysd.cpp:91
++#: kded_kosd_keys/kosdkeysd.cpp:97
++msgid "Show Brightness"
++msgstr "Показать яркость"
++
++#: kded_kosd_keys/kosdkeysd.cpp:103
++msgid "Show Battery Charge"
++msgstr "Показать заряд батареи"
++
++#: kded_kosd_keys/kosdkeysd.cpp:148
++#: kded_kosd/kosdd.cpp:209
++msgid "Volume Muted"
++msgstr "Звук выключен"
++
++#: kded_kosd_keys/kosdkeysd.cpp:161
++#: kded_kosd/kosdd.cpp:219
++msgid "Volume<br>%1%"
++msgstr "Громкость<br>%1%"
++
++#: kded_kosd_keys/kosdkeysd.cpp:200
++#: kded_kosd/kosdd.cpp:199
++msgid "Brightness<br>%1%"
++msgstr "Яркость<br>%1%"
++
++#: kded_kosd_keys/kosdkeysd.cpp:237
++#: kded_kosd/kosdd.cpp:192
++msgid "Battery Charge<br>%1%"
++msgstr "Заряд батареи<br>%1%"
++
++#. i18n: file: kcm_kosd/configurationwidget.ui:14
++#. i18n: ectx: property (windowTitle), widget (QWidget, ConfigurationWidget)
++#: rc.cpp:3
++msgid "KOSD Settings"
++msgstr "Настойки KOSD"
++
++#. i18n: file: kcm_kosd/configurationwidget.ui:20
++#. i18n: ectx: property (title), widget (KButtonGroup, kcfg_Type)
++#: rc.cpp:6
++msgid "OSD Type"
++msgstr "Тип OSD"
++
++#. i18n: file: kcm_kosd/configurationwidget.ui:26
++#. i18n: ectx: property (text), widget (QRadioButton, radioButton)
++#: rc.cpp:9
++msgid "Standard"
++msgstr "Стандартный"
++
++#. i18n: file: kcm_kosd/configurationwidget.ui:36
++#. i18n: ectx: property (text), widget (QRadioButton, radioButton_2)
++#: rc.cpp:12
++msgid "Compact"
++msgstr "Компактный"
++
++#. i18n: file: kcm_kosd/configurationwidget.ui:46
++#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
++#: rc.cpp:15
++msgid "Layout"
++msgstr "Расположение"
++
++#. i18n: file: kcm_kosd/configurationwidget.ui:54
++#. i18n: ectx: property (text), widget (QLabel, label_4)
++#: rc.cpp:18
++msgid "Horizontal position:"
++msgstr "Горизонтальное положение:"
++
++#. i18n: file: kcm_kosd/configurationwidget.ui:79
++#. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_HPos)
++#. i18n: file: kcm_kosd/configurationwidget.ui:126
++#. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_VPos)
++#. i18n: file: kcm_kosd/configurationwidget.ui:182
++#. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_Opacity)
++#: rc.cpp:22
++#: rc.cpp:29
++#: rc.cpp:39
++#, no-c-format
++msgid "%"
++msgstr "%"
++
++#. i18n: file: kcm_kosd/configurationwidget.ui:101
++#. i18n: ectx: property (text), widget (QLabel, label_3)
++#: rc.cpp:25
++msgid "Vertical position:"
++msgstr "Вертикальное положение:"
++
++#. i18n: file: kcm_kosd/configurationwidget.ui:149
++#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
++#: rc.cpp:32
++msgid "Transparancy"
++msgstr "Прозрачность"
++
++#. i18n: file: kcm_kosd/configurationwidget.ui:157
++#. i18n: ectx: property (text), widget (QLabel, label_5)
++#: rc.cpp:35
++msgid "Opacity:"
++msgstr "Непрозрачность:"
++
++#. i18n: file: kcm_kosd/configurationwidget.ui:205
++#. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
++#: rc.cpp:42
++msgid "Behavior"
++msgstr "Поведение"
++
++#. i18n: file: kcm_kosd/configurationwidget.ui:219
++#. i18n: ectx: property (text), widget (QLabel, label)
++#: rc.cpp:45
++msgid "Display duration:"
++msgstr "Время отображения:"
++
++#. i18n: file: kcm_kosd/configurationwidget.ui:232
++#. i18n: ectx: property (suffix), widget (QDoubleSpinBox, kcfg_Timeout)
++#: rc.cpp:48
++msgid " seconds"
++msgstr "секунд"
++
++#. i18n: file: kcm_kosd/configurationwidget.ui:256
++#. i18n: ectx: property (text), widget (QCheckBox, kcfg_PrimaryScreen)
++#: rc.cpp:51
++msgid "Always show on primary screen"
++msgstr "Всегда показывать на основном экране"
++
++#. i18n: file: kosd.kcfg:9
++#. i18n: ectx: label, entry (Type), group (kosd)
++#: rc.cpp:54
++msgid "The type of the OSD."
++msgstr "Тип экранного меню."
++
++#. i18n: file: kosd.kcfg:15
++#. i18n: ectx: label, entry (HPos), group (kosd)
++#. i18n: file: kosd.kcfg:21
++#. i18n: ectx: label, entry (VPos), group (kosd)
++#: rc.cpp:57
++#: rc.cpp:60
++msgid "The relative horizontal position of the OSD."
++msgstr "Относительное горизонтальное положение OSD."
++
++#. i18n: file: kosd.kcfg:27
++#. i18n: ectx: label, entry (Opacity), group (kosd)
++#: rc.cpp:63
++msgid "The opacity of the OSD when compositing is enabled."
++msgstr "Прозрачность OSD при включенных эффектах."
++
++#. i18n: file: kosd.kcfg:33
++#. i18n: ectx: label, entry (Timeout), group (kosd)
++#: rc.cpp:66
++msgid "The duration in seconds that the OSD stays visible."
++msgstr "Длительность отображения OSD  в секундах."
++
++#. i18n: file: kosd.kcfg:39
++#. i18n: ectx: label, entry (PrimaryScreen), group (kosd)
++#: rc.cpp:69
++msgid "If checked the OSD will always be shown on the primary screen. If not checked the OSD will be shown on the screen currently under the cursor."
++msgstr "Если флажок установлен, OSD всегда будет отображаться на основном экране. Если не установлен, OSD будет показан на экране, который находится под курсором."
++
++#: rc.cpp:70
++msgctxt "NAME OF TRANSLATORS"
++msgid "Your names"
++msgstr "Виктор Рыжих"
++
++#: rc.cpp:71
++msgctxt "EMAIL OF TRANSLATORS"
++msgid "Your emails"
++msgstr "victorr2007@yandex.ru"
++
