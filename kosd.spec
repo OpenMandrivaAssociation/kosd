@@ -1,6 +1,6 @@
 Name:		kosd
 Version:	0.8.1
-Release:	2
+Release:	3
 Summary:	An application showing OSD to respond volume buttons
 License:	GPLv2+
 Group:		Graphical desktop/KDE
