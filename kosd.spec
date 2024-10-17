@@ -5,7 +5,7 @@ Summary:	An application showing OSD to respond volume buttons
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
-URL:		http://www.kde-apps.org/content/show.php?content=81457
+URL:		https://www.kde-apps.org/content/show.php?content=81457
 Source:		http://www.kde-apps.org/CONTENT/content-files/81457-%{name}-%{version}.tar.bz2
 Patch0:		kosd-0.8.1-ru.patch
 BuildRequires:	kdebase4-workspace-devel
