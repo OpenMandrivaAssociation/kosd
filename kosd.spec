@@ -8,6 +8,7 @@ BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 URL:		https://www.kde-apps.org/content/show.php?content=81457
 Source:		http://www.kde-apps.org/CONTENT/content-files/81457-%{name}-%{version}.tar.bz2
 Patch0:		kosd-0.8.1-ru.patch
+BuildRequires:	make
 BuildRequires:	kdebase4-workspace-devel
 Obsoletes:	kde3-kvolumeosd < %{version}
 Obsoletes:	kde3-kosd < %{version}
